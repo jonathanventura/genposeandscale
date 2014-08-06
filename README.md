@@ -3,6 +3,7 @@ Generalized Pose-and-Scale Solver
 
 ### Authors
 Jonathan Ventura, Clemens Arth, Gerhard Reitmayr and Dieter Schmalstieg
+
 Graz University of Technology, Austria
 
 ### Introduction
@@ -10,15 +11,16 @@ This repository contains MATLAB code for solving the generalized pose-and-scale 
 The problem and our solution are described in our CVPR 2014 paper.
 
 ### Usage
-GENPOSEANDSCALE Solves for the pose and scale of a generalized camera.
-  [Psolns,ssolns] = genposeandscale(p,d,q)
+	GENPOSEANDSCALE Solves for the pose and scale of a generalized camera.
+	  [Psolns,ssolns] = genposeandscale(p,d,q)
 
-  p is a 3xN matrix of ray origins
-  d is a 3xN matrix of ray directions
-  q is a 3xN matrix of anchor points
+	  p is a 3xN matrix of ray origins
+	  d is a 3xN matrix of ray directions
+	  q is a 3xN matrix of anchor points
 
 ### Acknowledgment
 If you use this algorithm in your work, please cite the following paper:
+
 J. Ventura, C. Arth, G. Reitmayr, and D. Schmalstieg,
 A Minimal Solution to the Generalized Pose-and-Scale Problem, in CVPR '14: Proceedings of the 2014 IEEE Conference on Computer Vision and Pattern Recognition, 2014.
 
