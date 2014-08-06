@@ -805,10 +805,10 @@ function [b1 b2 b3 b4 b5] = genposeandscale_solvecoeffs(B1, B2, B3, B4, B5, B6)
 	M(2602) = c(209);
 	M(2650) = c(210);
 
-    Mr = M(:,1:48)\M(:,49:56);
+	Mr = M(:,1:48)\M(:,49:56);
     
 	A = zeros(8);
-    amcols = [8 7 6 5 4 3 2 1];
+	amcols = [8 7 6 5 4 3 2 1];
 	A(1, 6) = 1;
 	A(2, :) = -Mr(46, amcols);
 	A(3, :) = -Mr(42, amcols);
