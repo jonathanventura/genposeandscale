@@ -4,8 +4,6 @@ Generalized Pose-and-Scale Solver
 ### Authors
 Jonathan Ventura, Clemens Arth, Gerhard Reitmayr and Dieter Schmalstieg
 
-Graz University of Technology, Austria
-
 ### Introduction
 This repository contains MATLAB code for solving the generalized pose-and-scale problem.
 The problem and our solution are described in our CVPR 2014 paper.
