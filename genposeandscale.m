@@ -6,6 +6,8 @@ function [Psolns,ssolns] = genposeandscale(p,d,q)
 %   d is a 3xN matrix of ray directions
 %   q is a 3xN matrix of anchor points
 %
+%   N must be at least 4.
+%
 % If you use this algorithm in your work, please cite the following paper:
 % J. Ventura, C. Arth, G. Reitmayr, and D. Schmalstieg,
 % "A Minimal Solution to the Generalized Pose-and-Scale Problem", CVPR, 2014.
@@ -42,7 +44,7 @@ function [Psolns,ssolns] = genposeandscale(p,d,q)
 % OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 B = getbasis(p,d,q);
-[b1 b2 b3 b4 b5] = genposeandscale_solvecoeffs(B(:,1),B(:,2),B(:,3),B(:,4),B(:,5),B(:,6));
+[b1,b2,b3,b4,b5] = genposeandscale_solvecoeffs(B(:,1),B(:,2),B(:,3),B(:,4),B(:,5),B(:,6));
 
 nsolns = length(b1);
 Psolns = cell(nsolns,1);
